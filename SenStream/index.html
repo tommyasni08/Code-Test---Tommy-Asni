@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sensor Streaming</title>
+  <style>
+    table,th,td {
+      border: 1px solid black;
+    }
+
+    th {
+      background-color: grey;
+      color: white
+    }
+
+    #room p {
+      font-style:italic;
+      color : rgb(0, 0, 255);
+    }
+
+    h1 {
+      background-color: rgb(155, 196, 158);
+      color : black;;
+      border: 5px solid black;
+    }
+
+    #avg, #room {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Sensor Streaming</h1>
+  <h2>Average Sensors Value from All Rooms.</h2>
+  <div id="avg">
+    <p>Temperature : <span id="avg-temp"></span><br>
+      Humidity: <span id="avg-hum"></span>
+    </p>
+  </div>
+  <h2>Sensor Value of Each Room.</h2>
+  <div id="room">
+    <div id="room1">
+      <p>Room Area 1</p>
+      <table id="tb_AR1" style='width: 100%'>
+        <tr>
+          <th></th>
+          <th>Minimum</th>
+          <th>Maximum</th>
+          <th>Median</th>
+          <th>Average</th>
+        </tr>
+      </table>
+    </div>
+
+    <div id="room2">
+      <p>Room Area 2</p>
+      <table id="tb_AR2" style='width: 100%'>
+        <tr>
+          <th></th>
+          <th>Minimum</th>
+          <th>Maximum</th>
+          <th>Median</th>
+          <th>Average</th>
+        </tr>
+      </table>
+    </div>
+
+    <div id="room3">
+      <p>Room Area 3</p>
+      <table id="tb_AR3" style='width: 100%'>
+        <tr>
+          <th></th>
+          <th>Minimum</th>
+          <th>Maximum</th>
+          <th>Median</th>
+          <th>Average</th>
+        </tr>
+      </table>
+    </div>
+
+    <div id="room4">
+      <p>Room Area 4</p>
+      <table id="tb_AR4" style='width: 100%'>
+        <tr>
+          <th></th>
+          <th>Minimum</th>
+          <th>Maximum</th>
+          <th>Median</th>
+          <th>Average</th>
+        </tr>
+      </table>
+    </div>
+
+    <div id="room5">
+      <p>Room Area 5</p>
+      <table id="tb_AR5" style='width: 100%'>
+        <tr>
+          <th></th>
+          <th>Minimum</th>
+          <th>Maximum</th>
+          <th>Median</th>
+          <th>Average</th>
+        </tr>
+      </table>
+    </div>
+
+
+  </div>
+
+  <script src='index.js'> </script>
+</body>
+</html>

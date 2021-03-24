@@ -1,0 +1,17 @@
+{
+  "name": "codetest_cad-it",
+  "version": "1.0.0",
+  "description": "Code Test - CAD-IT IoT Apps Dev",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "Tommy Asni",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1"
+  }
+}

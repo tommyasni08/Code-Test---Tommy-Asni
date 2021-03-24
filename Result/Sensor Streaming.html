@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)http://127.0.0.1:5500/SenStream/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sensor Streaming</title>
+  <style>
+    table,th,td {
+      border: 1px solid black;
+    }
+
+    th {
+      background-color: grey;
+      color: white
+    }
+
+    #room p {
+      font-style:italic;
+      color : rgb(0, 0, 255);
+    }
+
+    h1 {
+      background-color: rgb(155, 196, 158);
+      color : black;;
+      border: 5px solid black;
+    }
+
+    #avg, #room {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Sensor Streaming</h1>
+  <h2>Average Sensors Value from All Rooms.</h2>
+  <div id="avg">
+    <p>Temperature : <span id="avg-temp">22.484433841395436</span><br>
+      Humidity: <span id="avg-hum">93.45581802919129</span>
+    </p>
+  </div>
+  <h2>Sensor Value of Each Room.</h2>
+  <div id="room">
+    <div id="room1">
+      <p>Room Area 1</p>
+      <table id="tb_AR1" style="width: 100%">
+        <tbody><tr>
+          <th></th>
+          <th>Minimum</th>
+          <th>Maximum</th>
+          <th>Median</th>
+          <th>Average</th>
+        </tr>
+      </tbody><tbody><tr>
+        <td>Temperature</td>
+        <td>18.08056577168301</td>
+        <td>27.645036867742533</td>
+        <td>20.426929919076247</td>
+        <td>22.17457613578717</td>
+      </tr></tbody><tbody><tr>
+        <td>Humidity</td>
+        <td>87.13200780574165</td>
+        <td>97.33432640554545</td>
+        <td>91.31239004765203</td>
+        <td>91.69212385905038</td>
+      </tr></tbody></table>
+    </div>
+
+    <div id="room2">
+      <p>Room Area 2</p>
+      <table id="tb_AR2" style="width: 100%">
+        <tbody><tr>
+          <th></th>
+          <th>Minimum</th>
+          <th>Maximum</th>
+          <th>Median</th>
+          <th>Average</th>
+        </tr>
+      </tbody><tbody><tr>
+        <td>Temperature</td>
+        <td>17.37094500882897</td>
+        <td>27.903109363253293</td>
+        <td>22.99608366258836</td>
+        <td>22.926241838914727</td>
+      </tr></tbody><tbody><tr>
+        <td>Humidity</td>
+        <td>90.02551471465226</td>
+        <td>97.34211317616695</td>
+        <td>94.36622918005362</td>
+        <td>91.69212385905038</td>
+      </tr></tbody></table>
+    </div>
+
+    <div id="room3">
+      <p>Room Area 3</p>
+      <table id="tb_AR3" style="width: 100%">
+        <tbody><tr>
+          <th></th>
+          <th>Minimum</th>
+          <th>Maximum</th>
+          <th>Median</th>
+          <th>Average</th>
+        </tr>
+      </tbody><tbody><tr>
+        <td>Temperature</td>
+        <td>17.902467059651464</td>
+        <td>27.883913785093004</td>
+        <td>23.484209931522848</td>
+        <td>23.64598771856339</td>
+      </tr></tbody><tbody><tr>
+        <td>Humidity</td>
+        <td>87.32412031245975</td>
+        <td>97.3336971870608</td>
+        <td>95.22485648973904</td>
+        <td>93.60814129851973</td>
+      </tr></tbody></table>
+    </div>
+
+    <div id="room4">
+      <p>Room Area 4</p>
+      <table id="tb_AR4" style="width: 100%">
+        <tbody><tr>
+          <th></th>
+          <th>Minimum</th>
+          <th>Maximum</th>
+          <th>Median</th>
+          <th>Average</th>
+        </tr>
+      </tbody><tbody><tr>
+        <td>Temperature</td>
+        <td>17.067023107354895</td>
+        <td>26.6398915861801</td>
+        <td>20.22304037455183</td>
+        <td>21.332006997266816</td>
+      </tr></tbody><tbody><tr>
+        <td>Humidity</td>
+        <td>87.28153264796819</td>
+        <td>96.78538669788607</td>
+        <td>95.82098965131658</td>
+        <td>94.4978195909816</td>
+      </tr></tbody></table>
+    </div>
+
+    <div id="room5">
+      <p>Room Area 5</p>
+      <table id="tb_AR5" style="width: 100%">
+        <tbody><tr>
+          <th></th>
+          <th>Minimum</th>
+          <th>Maximum</th>
+          <th>Median</th>
+          <th>Average</th>
+        </tr>
+      </tbody><tbody><tr>
+        <td>Temperature</td>
+        <td>18.218409708833004</td>
+        <td>27.473009204797656</td>
+        <td>22.09713625461655</td>
+        <td>22.343356516445038</td>
+      </tr></tbody><tbody><tr>
+        <td>Humidity</td>
+        <td>88.69753300045234</td>
+        <td>97.94624933412655</td>
+        <td>93.04480106360575</td>
+        <td>93.54439308982111</td>
+      </tr></tbody></table>
+    </div>
+
+
+  </div>
+
+  <script src="./Sensor Streaming_files/index.js"> </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
